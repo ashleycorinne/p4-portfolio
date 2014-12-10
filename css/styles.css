@@ -34,6 +34,9 @@ hr{
         filter: FlipH;
         -ms-filter: "FlipH";
 }
+.fa.fa-home,.fa.fa-gamepad,.fa.fa-puzzle-piece,.fa.fa-graduation-cap{
+    font-size: 1.2em;
+}
 
 .Logo{
 	text-align: center;
