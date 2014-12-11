@@ -35,7 +35,7 @@ hr{
         -ms-filter: "FlipH";
 }
 .fa.fa-home,.fa.fa-gamepad,.fa.fa-puzzle-piece,.fa.fa-graduation-cap{
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 
 .Logo{
@@ -177,11 +177,12 @@ hr{
 }
 .socialMedia{
 	text-align: center;
+    margin-top: 30px;
 }
 .socialMedia i{
 	font-size: 2.0em;
 	color:#b2b2b2;
-	padding-right: 5px;
+	padding-right: 20px;
 }
 
 .socialMedia i:hover{
