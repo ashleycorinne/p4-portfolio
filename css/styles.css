@@ -1,89 +1,481 @@
 body{
-font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-weight: 300;
+    background: url("../img/subtle_dots.png")
 }
-.css-slideshow{
-  position: relative;
-  max-width: 495px;
-  height: 370px;
-  margin: 5em auto .5em auto;
+footer{
+    text-align: center ;
+    font-size: 1.0em;
+    height: 20px ;
+    color: #a2a2a2;
+    padding-bottom: 30px;
 }
-.css-slideshow figure{
-  margin: 0;
-  max-width: 495px;
-  height: 370px;
-  background: #000;
-  position: absolute;
+hr{
+    border-color: #b2b2b2;
 }
-.css-slideshow img{
-  box-shadow: 0 0 2px #666;
+.container{
+    width:100%;
+    color:#b2b2b2;
 }
-.css-slideshow figcaption{
-  position: absolute;
-  top: 0;
-  color: #fff;
-  background: rgba(0,0,0, .3);
-  font-size: .8em;
-  padding: 8px 12px;
-  opacity: 0;
-  transition: opacity .5s;
-}
-.css-slideshow:hover figure figcaption{
-  transition: opacity .5s;
-  opacity: 1;
-}
-.css-slideshow-attr{
-  max-width: 495px;
-  text-align: right;
-  font-size: .7em;
-  font-style: italic;
-  margin:0 auto;
-}
-.css-slideshow-attr a{
-  color: #666;
-}
-.css-slideshow figure{
-  opacity:0;
-}
-figure:nth-child(1) {
-  animation: xfade 48s 42s infinite;
-}
-figure:nth-child(2) {
-  animation: xfade 48s 36s infinite;
-}
-figure:nth-child(3) {
-  animation: xfade 48s 30s infinite;
-}
-figure:nth-child(4) {
-  animation: xfade 48s 24s infinite;
-}
-figure:nth-child(5) {
-  animation: xfade 48s 18s infinite;
-}
-figure:nth-child(6) {
-  animation: xfade 48s 12s infinite;
-}
-figure:nth-child(7) {
-  animation: xfade 48s 6s infinite;
-}
-figure:nth-child(8) {
-  animation: xfade 48s 0s infinite;
+.brandLogo{
+    width: 5%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    z-index: 1;
 }
 
-@keyframes xfade{
-  0%{
-    opacity: 1;
-  }
-  10.5% {
-    opacity: 1;
-  }
-  12.5%{
-    opacity: 0;
-  }
-  98% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.fa.fa-home,.fa.fa-gamepad,.fa.fa-puzzle-piece,.fa.fa-graduation-cap{
+    font-size: 1.0em;
 }
+
+.brandLogo:hover{
+    cursor: pointer;
+    -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+.Logo{
+    text-align: center;
+    display: block;
+}
+.navBar{
+    text-align: center;
+}
+.navBar li{
+    list-style: none;
+    display: inline;
+    font-size:2.0em;
+    margin-right: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.navBar a {              
+    text-decoration: none;
+    color: #333;
+    padding-right: 10px;
+}
+.navBar a:hover{
+    color: #b2b2b2;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.selectedPage a{
+    color: #A86973;
+}
+
+.pageContent{
+    background: #333;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.pageSections{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.resumeHeaders{
+    font-size: 1.8em;
+    padding: 5px 5px 0px 5px;
+    color: white;
+}
+
+.nameInfo{
+    font-size: 3.2em;
+    display: block;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    padding-top: 70px;
+    color:white;
+}
+.contactInfo{
+    display: block;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #b2b2b2;
+    font-size: 1.4em;
+    padding-top: 15px;
+}
+
+.emailLink{
+    text-decoration: none;
+    padding-right: 10px;
+    color:#b2b2b2;
+}
+.emailLink:hover{
+    cursor: pointer;
+    color: #A86973;
+}
+.phoneNumber{
+    padding-left: 10px;
+}
+
+section{
+    display: block;
+    padding-top: 20px;
+}
+hr{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.resume{
+    width: 80%;
+    display: block;
+    margin: auto;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+
+
+.contentBox{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: #444 3px 3px 10px;
+
+}
+
+.myInfo{
+    display: inline-block;  
+    vertical-align: top;
+    padding:20px;
+
+}
+.myInfoHeader{
+    font-size: 1.5em;
+    display: block;
+    color:#555;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.barHeader{
+    background: #777;
+    width:100%;
+    height:1px;
+    margin-top: 30px;
+}
+.myPics{
+    padding:20px;
+}
+.pic{
+    width: 33%;
+}
+
+.tab { text-indent:40px; }
+.paragraph, .favLists ul{
+    font:1em Arial, Helvetica, sans-serif
+}
+.socialMedia{
+    text-align: center;
+    margin-top: 30px;
+}
+.socialMedia i{
+    font-size: 2.0em;
+    color:#b2b2b2;
+    padding-right: 20px;
+}
+
+.socialMedia i:hover{
+    color:#A86973;
+    cursor: pointer;
+     -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.skillList{
+    list-style-type: none; 
+    font-size:1.1em;
+}
+.workHeader{
+    padding-top: 20px;
+    font-size: 1.3em;
+}
+.workList{
+    font-size: 1.0em;
+}
+.bold,.workTitle{
+    font-weight: bold;
+}
+.workPlace{
+    margin-left: 20px;
+}
+.workTime{
+    float:right;
+}
+.skillList li, .workList li{
+    padding: 5px;
+}
+.languagesDiv{
+    display:inline-block; 
+    vertical-align:top;
+}
+.programsDiv{
+    display:inline-block; 
+    vertical-align:top;
+}
+.mcdesigns{
+    width:50%;
+}
+ul{
+    padding: 0px;
+}
+
+@media only screen and (max-device-width: 480px) {
+
+    .contactInfo{
+        font-size: 1.2em;
+    }
+    .nameInfo{
+        font-size: 2.0em;
+    }
+    .resumeHeaders{
+        font-size: 1.5em;
+    }
+    .workTitle,.workPlace,.workTime{
+        display: block;
+        font-size: 1.0em;
+    }
+    .languagesDiv,.programsDiv{
+        display: block;
+    }
+    .mcdesigns{
+        width:100%;
+    }
+    .brandLogo{
+        width: 10%;
+    }
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+      opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+    width: 100%;
+    bottom: 9px;
+    height: 11px;
+    display: block;
+    position: absolute;
+    text-align: center;
+}
+
+.nav-dots .nav-dot {
+    top: -5px;
+    width: 11px;
+    height: 11px;
+    margin: 0 4px;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.5; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transform: scale(1);
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+  width: 100%;
+  bottom: 9px;
+  height: 11px;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+
+.nav-dots .nav-dot {
+  top: -5px;
+  width: 11px;
+  height: 11px;
+  margin: 0 4px;
+  position: relative;
+  border-radius: 100%;
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+  background: rgba(0, 0, 0, 0.8);
+}
+
